@@ -5,7 +5,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 setlocal enabledelayedexpansion
 
 :SilentUpdates
-set local=0.1
+set local=1.0
 set localtwo=%LOCAL%
 if exist "%TEMP%\Updater.bat" DEL /S /Q /F "%TEMP%\Updater.bat" >nul 2>&1
 curl -g -L -# -o "%TEMP%\Updater.bat" "https://raw.githubusercontent.com/r1ccardd/WindowsProActivator/main/ver" >nul 2>&1
